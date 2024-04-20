@@ -15,7 +15,7 @@ struct TextInSwiftUI: View {
             // Text
             Text("Welcome to SwiftUI").foregroundColor(.blue).font(.largeTitle)
                 .bold().fontDesign(.rounded)
-            Text("A modern approach towards UI").font(.system(size: 18)).foregroundColor(.black)
+            Text("A modern approach towards UI").font(.system(size: 20)).foregroundColor(.black)
             Spacer().frame(height: 30)
             
             // Parent HStack
@@ -46,6 +46,10 @@ struct TextInSwiftUI: View {
                 
                 
             }.frame(maxWidth: .infinity)
+            
+            Spacer().frame(height: 60)
+            Text("Developed By")
+            Text("Mrinmoy Borah").tracking(10).font(.system(size: 15)).bold().foregroundColor(.gray).textCase(.uppercase)
             
         }.frame(maxWidth: /*@START_MENU_TOKEN@*/.infinity/*@END_MENU_TOKEN@*/, maxHeight: .infinity).padding()
     }

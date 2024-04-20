@@ -15,6 +15,7 @@
 		F5DF723B2BAD6BA7002A3277 /* DemoAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5DF723A2BAD6BA7002A3277 /* DemoAppTests.swift */; };
 		F5DF72452BAD6BA7002A3277 /* DemoAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5DF72442BAD6BA7002A3277 /* DemoAppUITests.swift */; };
 		F5DF72472BAD6BA7002A3277 /* DemoAppUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5DF72462BAD6BA7002A3277 /* DemoAppUITestsLaunchTests.swift */; };
+		F5FF47602BD2A26F009A9FB1 /* ShapeinSwiftUI.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5FF475F2BD2A26F009A9FB1 /* ShapeinSwiftUI.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -46,6 +47,7 @@
 		F5DF72402BAD6BA7002A3277 /* DemoAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DemoAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F5DF72442BAD6BA7002A3277 /* DemoAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DemoAppUITests.swift; sourceTree = "<group>"; };
 		F5DF72462BAD6BA7002A3277 /* DemoAppUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DemoAppUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		F5FF475F2BD2A26F009A9FB1 /* ShapeinSwiftUI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShapeinSwiftUI.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,6 +100,7 @@
 			children = (
 				F5DF72292BAD6BA7002A3277 /* DemoAppApp.swift */,
 				F5D924FC2BD166BD00205BE3 /* TextInSwiftUI.swift */,
+				F5FF475F2BD2A26F009A9FB1 /* ShapeinSwiftUI.swift */,
 				F5DF722B2BAD6BA7002A3277 /* ContentView.swift */,
 				F5DF722D2BAD6BA7002A3277 /* Assets.xcassets */,
 				F5DF722F2BAD6BA7002A3277 /* Preview Content */,
@@ -262,6 +265,7 @@
 			files = (
 				F5D924FD2BD166BD00205BE3 /* TextInSwiftUI.swift in Sources */,
 				F5DF722C2BAD6BA7002A3277 /* ContentView.swift in Sources */,
+				F5FF47602BD2A26F009A9FB1 /* ShapeinSwiftUI.swift in Sources */,
 				F5DF722A2BAD6BA7002A3277 /* DemoAppApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
