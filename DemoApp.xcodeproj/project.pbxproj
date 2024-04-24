@@ -15,6 +15,7 @@
 		F5DF723B2BAD6BA7002A3277 /* DemoAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5DF723A2BAD6BA7002A3277 /* DemoAppTests.swift */; };
 		F5DF72452BAD6BA7002A3277 /* DemoAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5DF72442BAD6BA7002A3277 /* DemoAppUITests.swift */; };
 		F5DF72472BAD6BA7002A3277 /* DemoAppUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5DF72462BAD6BA7002A3277 /* DemoAppUITestsLaunchTests.swift */; };
+		F5F340172BD97ADD0028F0DD /* Counter.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5F340162BD97ADD0028F0DD /* Counter.swift */; };
 		F5FF47602BD2A26F009A9FB1 /* ShapeinSwiftUI.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5FF475F2BD2A26F009A9FB1 /* ShapeinSwiftUI.swift */; };
 /* End PBXBuildFile section */
 
@@ -47,6 +48,7 @@
 		F5DF72402BAD6BA7002A3277 /* DemoAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DemoAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F5DF72442BAD6BA7002A3277 /* DemoAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DemoAppUITests.swift; sourceTree = "<group>"; };
 		F5DF72462BAD6BA7002A3277 /* DemoAppUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DemoAppUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		F5F340162BD97ADD0028F0DD /* Counter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Counter.swift; sourceTree = "<group>"; };
 		F5FF475F2BD2A26F009A9FB1 /* ShapeinSwiftUI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShapeinSwiftUI.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -98,6 +100,7 @@
 		F5DF72282BAD6BA7002A3277 /* DemoApp */ = {
 			isa = PBXGroup;
 			children = (
+				F5F340132BD97AB10028F0DD /* State */,
 				F5DF72292BAD6BA7002A3277 /* DemoAppApp.swift */,
 				F5D924FC2BD166BD00205BE3 /* TextInSwiftUI.swift */,
 				F5FF475F2BD2A26F009A9FB1 /* ShapeinSwiftUI.swift */,
@@ -131,6 +134,14 @@
 				F5DF72462BAD6BA7002A3277 /* DemoAppUITestsLaunchTests.swift */,
 			);
 			path = DemoAppUITests;
+			sourceTree = "<group>";
+		};
+		F5F340132BD97AB10028F0DD /* State */ = {
+			isa = PBXGroup;
+			children = (
+				F5F340162BD97ADD0028F0DD /* Counter.swift */,
+			);
+			path = State;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -263,6 +274,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F5F340172BD97ADD0028F0DD /* Counter.swift in Sources */,
 				F5D924FD2BD166BD00205BE3 /* TextInSwiftUI.swift in Sources */,
 				F5DF722C2BAD6BA7002A3277 /* ContentView.swift in Sources */,
 				F5FF47602BD2A26F009A9FB1 /* ShapeinSwiftUI.swift in Sources */,
