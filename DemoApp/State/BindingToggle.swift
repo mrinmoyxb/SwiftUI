@@ -8,8 +8,19 @@
 import SwiftUI
 
 struct BindingToggle: View {
+    
+    @State var buttonState: Bool = false
+    
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        VStack{
+            Text("Color Blue").font(.title).bold()
+                .foregroundColor(buttonState ? .blue: .black)
+            Text("Color Green").font(.title).bold()
+                .foregroundColor(buttonState ? .green: .black)
+            Toggle(isOn: $buttonState, label: {Text("Toggle")}).fixedSize().onTapGesture {
+                buttonState.toggle()
+            }
+        }
     }
 }
 
