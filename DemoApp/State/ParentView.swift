@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct BindingToggle: View {
+struct ParentView: View {
     
     @State var buttonState: Bool = false
     
@@ -17,13 +17,11 @@ struct BindingToggle: View {
                 .foregroundColor(buttonState ? .blue: .black)
             Text("Color Green").font(.title).bold()
                 .foregroundColor(buttonState ? .green: .black)
-            Toggle(isOn: $buttonState, label: {Text("Toggle")}).fixedSize().onTapGesture {
-                buttonState.toggle()
-            }
+            ChildView(buttonState: $buttonState)
         }
     }
 }
 
 #Preview {
-    BindingToggle()
+    ParentView()
 }

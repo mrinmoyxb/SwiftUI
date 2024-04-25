@@ -8,11 +8,18 @@
 import SwiftUI
 
 struct ChildView: View {
+    
+    @Binding var buttonState: Bool
+    // Binding property value doesn't hold any property on it's own, instead it takes the value of parent
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        VStack{
+            Toggle(isOn: $buttonState, label: {Text("Toggle")}).fixedSize().onTapGesture {
+                buttonState.toggle()
+            }
+        }
     }
 }
 
 #Preview {
-    ChildView()
+    ChildView(buttonState: .constant(true))
 }
