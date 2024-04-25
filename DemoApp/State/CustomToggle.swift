@@ -8,11 +8,20 @@
 import SwiftUI
 
 struct CustomToggle: View {
+    
+    @State var isSwitchOn: Bool = true
+    
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        VStack{
+            Button {
+                isSwitchOn.toggle() // Toggle state on button click
+            } label: {
+                Toggle("toggle", isOn: $isSwitchOn)
+            }
+            
+        }.padding()
     }
 }
-
 #Preview {
     CustomToggle()
 }
