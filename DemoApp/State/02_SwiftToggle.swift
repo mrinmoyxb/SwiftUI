@@ -8,8 +8,19 @@
 import SwiftUI
 
 struct SwiftToggle: View {
+    
+    @State var currentState: Bool = false
+    
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        ZStack{
+            Color(currentState ? .black: .white)
+            VStack{
+                Button("Dark Mode", action: {currentState = true}).buttonStyle(.borderedProminent).frame(width: 400)
+                Button("Light Mode", action: {currentState = false})
+                    .buttonStyle(.borderedProminent).frame(width: 400)
+            }
+        }.frame(maxWidth: .infinity, maxHeight: .infinity).ignoresSafeArea()
+        
     }
 }
 
