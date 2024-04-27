@@ -16,11 +16,24 @@ struct SwiftToggle: View {
             Color(currentState ? .black: .white)
             VStack{
                 Button("Dark Mode", action: {currentState = true}).buttonStyle(.borderedProminent).frame(width: 400)
-                Button("Light Mode", action: {currentState = false})
-                    .buttonStyle(.borderedProminent).frame(width: 400)
+                LightButton(currentState: $currentState)
             }
+                
+            
         }.frame(maxWidth: .infinity, maxHeight: .infinity).ignoresSafeArea()
         
+    }
+}
+
+struct LightButton: View{
+    @Binding var currentState: Bool
+
+    var body: some View{
+        VStack{
+            Button("Light Mode", action: {currentState = false})
+                .buttonStyle(.borderedProminent).frame(width: 400)
+            Text("\(currentState)").bold().foregroundColor(currentState ? .white: .black)
+        }
     }
 }
 
