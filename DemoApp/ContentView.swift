@@ -8,9 +8,14 @@
 import SwiftUI
 
 struct ContentView: View {
+    
+    //@StateObject var profile = ProfileClass()
+    
     var body: some View {
         //ToggleButton()
-        CustomToggle()
+        //CustomToggle()
+        Account()
+            //.environmentObject(profile)
     }
 }
 #Preview {

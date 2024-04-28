@@ -6,3 +6,9 @@
 //
 
 import Foundation
+import SwiftUI
+
+class ProfileClass: ObservableObject{
+    
+    @Published var isLoggedIn: Bool = false
+}

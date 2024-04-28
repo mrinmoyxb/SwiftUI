@@ -7,10 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F50BCDB22BDEB90D0020C9E7 /* Navigation1.swift in Sources */ = {isa = PBXBuildFile; fileRef = F50BCDB12BDEB90D0020C9E7 /* Navigation1.swift */; };
 		F57708582BDA21D300BC8892 /* CounterButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = F57708572BDA21D300BC8892 /* CounterButton.swift */; };
 		F59252912BDD0A4100C4A664 /* AccountView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F59252902BDD0A4100C4A664 /* AccountView.swift */; };
 		F59252932BDD0B1F00C4A664 /* BalanceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F59252922BDD0B1F00C4A664 /* BalanceView.swift */; };
 		F59252972BDD0B4800C4A664 /* Profile.swift in Sources */ = {isa = PBXBuildFile; fileRef = F59252962BDD0B4800C4A664 /* Profile.swift */; };
+		F592529A2BDD17EF00C4A664 /* Account.swift in Sources */ = {isa = PBXBuildFile; fileRef = F59252992BDD17EF00C4A664 /* Account.swift */; };
+		F592529C2BDD195E00C4A664 /* Balance.swift in Sources */ = {isa = PBXBuildFile; fileRef = F592529B2BDD195E00C4A664 /* Balance.swift */; };
+		F592529E2BDD2C5000C4A664 /* ProfileClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = F592529D2BDD2C5000C4A664 /* ProfileClass.swift */; };
 		F59FB9432BDB652C009D5666 /* 02_SwiftToggle.swift in Sources */ = {isa = PBXBuildFile; fileRef = F59FB9422BDB652C009D5666 /* 02_SwiftToggle.swift */; };
 		F5CA0F3E2BDA8FA8000A3A47 /* CustomToggle.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5CA0F3D2BDA8FA8000A3A47 /* CustomToggle.swift */; };
 		F5CA0F402BDA9B57000A3A47 /* 00_ParentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5CA0F3F2BDA9B57000A3A47 /* 00_ParentView.swift */; };
@@ -45,10 +49,14 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		F50BCDB12BDEB90D0020C9E7 /* Navigation1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Navigation1.swift; sourceTree = "<group>"; };
 		F57708572BDA21D300BC8892 /* CounterButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CounterButton.swift; sourceTree = "<group>"; };
 		F59252902BDD0A4100C4A664 /* AccountView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountView.swift; sourceTree = "<group>"; };
 		F59252922BDD0B1F00C4A664 /* BalanceView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BalanceView.swift; sourceTree = "<group>"; };
 		F59252962BDD0B4800C4A664 /* Profile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Profile.swift; sourceTree = "<group>"; };
+		F59252992BDD17EF00C4A664 /* Account.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Account.swift; sourceTree = "<group>"; };
+		F592529B2BDD195E00C4A664 /* Balance.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Balance.swift; sourceTree = "<group>"; };
+		F592529D2BDD2C5000C4A664 /* ProfileClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileClass.swift; sourceTree = "<group>"; };
 		F59FB9422BDB652C009D5666 /* 02_SwiftToggle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 02_SwiftToggle.swift; sourceTree = "<group>"; };
 		F5CA0F3D2BDA8FA8000A3A47 /* CustomToggle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomToggle.swift; sourceTree = "<group>"; };
 		F5CA0F3F2BDA9B57000A3A47 /* 00_ParentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 00_ParentView.swift; sourceTree = "<group>"; };
@@ -93,6 +101,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		F50BCDB02BDEB8F70020C9E7 /* Navigation */ = {
+			isa = PBXGroup;
+			children = (
+				F50BCDB12BDEB90D0020C9E7 /* Navigation1.swift */,
+			);
+			path = Navigation;
+			sourceTree = "<group>";
+		};
 		F592528F2BDD0A2300C4A664 /* ObservableState */ = {
 			isa = PBXGroup;
 			children = (
@@ -101,6 +117,16 @@
 				F59252962BDD0B4800C4A664 /* Profile.swift */,
 			);
 			path = ObservableState;
+			sourceTree = "<group>";
+		};
+		F59252982BDD178E00C4A664 /* EnvironmentState */ = {
+			isa = PBXGroup;
+			children = (
+				F59252992BDD17EF00C4A664 /* Account.swift */,
+				F592529B2BDD195E00C4A664 /* Balance.swift */,
+				F592529D2BDD2C5000C4A664 /* ProfileClass.swift */,
+			);
+			path = EnvironmentState;
 			sourceTree = "<group>";
 		};
 		F5DF721D2BAD6BA7002A3277 = {
@@ -165,6 +191,8 @@
 		F5F340132BD97AB10028F0DD /* State */ = {
 			isa = PBXGroup;
 			children = (
+				F50BCDB02BDEB8F70020C9E7 /* Navigation */,
+				F59252982BDD178E00C4A664 /* EnvironmentState */,
 				F592528F2BDD0A2300C4A664 /* ObservableState */,
 				F5F340162BD97ADD0028F0DD /* Counter.swift */,
 				F57708572BDA21D300BC8892 /* CounterButton.swift */,
@@ -307,8 +335,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				F5F340172BD97ADD0028F0DD /* Counter.swift in Sources */,
+				F592529C2BDD195E00C4A664 /* Balance.swift in Sources */,
 				F59252912BDD0A4100C4A664 /* AccountView.swift in Sources */,
 				F5CA0F3E2BDA8FA8000A3A47 /* CustomToggle.swift in Sources */,
+				F592529E2BDD2C5000C4A664 /* ProfileClass.swift in Sources */,
 				F59252972BDD0B4800C4A664 /* Profile.swift in Sources */,
 				F5D924FD2BD166BD00205BE3 /* TextInSwiftUI.swift in Sources */,
 				F5CA0F402BDA9B57000A3A47 /* 00_ParentView.swift in Sources */,
@@ -319,6 +349,8 @@
 				F59252932BDD0B1F00C4A664 /* BalanceView.swift in Sources */,
 				F5DF722A2BAD6BA7002A3277 /* DemoAppApp.swift in Sources */,
 				F59FB9432BDB652C009D5666 /* 02_SwiftToggle.swift in Sources */,
+				F592529A2BDD17EF00C4A664 /* Account.swift in Sources */,
+				F50BCDB22BDEB90D0020C9E7 /* Navigation1.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

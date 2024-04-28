@@ -7,12 +7,20 @@
 
 import SwiftUI
 
-struct Navigation1: View {
+struct NavigationScreen: View {
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        VStack{
+            NavigationStack{
+                List{
+                    NavigationLink("Next Screen"){
+                        Text("Welcome to Next Screen!")
+                    }
+                }}
+        }.frame(maxWidth: .infinity, maxHeight: .infinity)
+        
     }
 }
 
 #Preview {
-    Navigation1()
+    NavigationScreen()
 }

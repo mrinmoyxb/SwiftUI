@@ -8,8 +8,18 @@
 import SwiftUI
 
 struct Balance: View {
+    
+    @EnvironmentObject var profile: ProfileClass
+    
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        VStack{
+            if(profile.isLoggedIn==true){
+                Text("Balance: $9000000.00")
+            }
+            else{
+                Text("Sign In : $XXXXXXXX")
+            }
+        }
     }
 }
 
