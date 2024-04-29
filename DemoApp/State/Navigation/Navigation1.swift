@@ -15,6 +15,9 @@ struct NavigationScreen: View {
                     NavigationLink("Next Screen"){
                         Text("Welcome to Next Screen!")
                     }
+                    NavigationLink(""){
+                        
+                    }
                 }}
         }.frame(maxWidth: .infinity, maxHeight: .infinity)
         
