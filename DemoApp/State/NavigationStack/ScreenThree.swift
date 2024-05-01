@@ -8,11 +8,22 @@
 import SwiftUI
 
 struct ScreenThree: View {
+    
+    @Environment(\.dismiss) private var dismiss
+    
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        NavigationStack{
+            VStack{
+                Text("Welcome to Swift UI 😍").font(.title)
+                Button("Get Back"){
+                    dismiss()
+                }.buttonStyle(.borderedProminent)
+            }.frame(maxWidth: .infinity, maxHeight: .infinity)
+        }.navigationBarBackButtonHidden()
     }
 }
 
 #Preview {
     ScreenThree()
 }
+

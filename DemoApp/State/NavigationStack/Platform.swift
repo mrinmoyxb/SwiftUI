@@ -10,12 +10,14 @@ import SwiftUI
 struct PlatformScreen: View {
     
     var platforms: [Platform] = [.init(name: "Soup", image: "soup", color: .black),
-                                 .init(name: "Airplane", image: "plane", color: .blue),
+                                 .init(name: "Airplane", image: "plane", color: .pink),
                                  .init(name: "Home", image:"home" , color: .green)]
     
     var details: [Details] = [.init(description: "Hot and Healthy", ratings: 4.9),
                               .init(description: "Safe and Fast", ratings: 4.2),
                               .init(description: "Best place", ratings: 4.3)]
+    
+    @State private var path = NavigationPath()
     
     var body: some View {
         
@@ -47,10 +49,19 @@ struct PlatformScreen: View {
                     .navigationDestination(for: Platform.self){platform in
                         ZStack{
                             platform.color.ignoresSafeArea()
-                            Label(
-                                title: { Text(platform.name).bold().font(.largeTitle).foregroundColor(.white) },
-                                icon: { Image(platform.image).resizable().scaledToFit().frame(width: 50, height: 50).foregroundColor(.white) }
-                            )
+                            VStack{
+                                Label(
+                                    title: { Text(platform.name).bold().font(.largeTitle).foregroundColor(.white) },
+                                    icon: { Image(platform.image).resizable().scaledToFit().frame(width: 50, height: 50).foregroundColor(.white) }
+                                )
+                                List{
+                                    ForEach(details, id: \.self){detail in
+                                        NavigationLink(value: detail){
+                                            LabeledContent(content: {Text(String(detail.ratings))}, label: {Text(detail.description)})
+                                        }
+                                    }
+                                }
+                            }
                         }.frame(maxWidth: .infinity, maxHeight: .infinity)
                             
                     }

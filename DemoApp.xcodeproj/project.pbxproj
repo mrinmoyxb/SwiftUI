@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		F50BCDB22BDEB90D0020C9E7 /* Navigation1.swift in Sources */ = {isa = PBXBuildFile; fileRef = F50BCDB12BDEB90D0020C9E7 /* Navigation1.swift */; };
 		F57708582BDA21D300BC8892 /* CounterButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = F57708572BDA21D300BC8892 /* CounterButton.swift */; };
+		F58780EA2BE23E25005CFFCA /* ScreenThree.swift in Sources */ = {isa = PBXBuildFile; fileRef = F58780E92BE23E25005CFFCA /* ScreenThree.swift */; };
 		F59252912BDD0A4100C4A664 /* AccountView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F59252902BDD0A4100C4A664 /* AccountView.swift */; };
 		F59252932BDD0B1F00C4A664 /* BalanceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F59252922BDD0B1F00C4A664 /* BalanceView.swift */; };
 		F59252972BDD0B4800C4A664 /* Profile.swift in Sources */ = {isa = PBXBuildFile; fileRef = F59252962BDD0B4800C4A664 /* Profile.swift */; };
@@ -20,6 +21,7 @@
 		F5CA0F3E2BDA8FA8000A3A47 /* CustomToggle.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5CA0F3D2BDA8FA8000A3A47 /* CustomToggle.swift */; };
 		F5CA0F402BDA9B57000A3A47 /* 00_ParentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5CA0F3F2BDA9B57000A3A47 /* 00_ParentView.swift */; };
 		F5CA0F422BDAA20B000A3A47 /* 01_ChildView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5CA0F412BDAA20B000A3A47 /* 01_ChildView.swift */; };
+		F5D02D802BE0C10800CCBE0C /* ScreenOne.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5D02D7F2BE0C10800CCBE0C /* ScreenOne.swift */; };
 		F5D924FD2BD166BD00205BE3 /* TextInSwiftUI.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5D924FC2BD166BD00205BE3 /* TextInSwiftUI.swift */; };
 		F5DF722A2BAD6BA7002A3277 /* DemoAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5DF72292BAD6BA7002A3277 /* DemoAppApp.swift */; };
 		F5DF722C2BAD6BA7002A3277 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5DF722B2BAD6BA7002A3277 /* ContentView.swift */; };
@@ -52,6 +54,7 @@
 /* Begin PBXFileReference section */
 		F50BCDB12BDEB90D0020C9E7 /* Navigation1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Navigation1.swift; sourceTree = "<group>"; };
 		F57708572BDA21D300BC8892 /* CounterButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CounterButton.swift; sourceTree = "<group>"; };
+		F58780E92BE23E25005CFFCA /* ScreenThree.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScreenThree.swift; sourceTree = "<group>"; };
 		F59252902BDD0A4100C4A664 /* AccountView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountView.swift; sourceTree = "<group>"; };
 		F59252922BDD0B1F00C4A664 /* BalanceView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BalanceView.swift; sourceTree = "<group>"; };
 		F59252962BDD0B4800C4A664 /* Profile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Profile.swift; sourceTree = "<group>"; };
@@ -63,6 +66,7 @@
 		F5CA0F3D2BDA8FA8000A3A47 /* CustomToggle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomToggle.swift; sourceTree = "<group>"; };
 		F5CA0F3F2BDA9B57000A3A47 /* 00_ParentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 00_ParentView.swift; sourceTree = "<group>"; };
 		F5CA0F412BDAA20B000A3A47 /* 01_ChildView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 01_ChildView.swift; sourceTree = "<group>"; };
+		F5D02D7F2BE0C10800CCBE0C /* ScreenOne.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScreenOne.swift; sourceTree = "<group>"; };
 		F5D924FC2BD166BD00205BE3 /* TextInSwiftUI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextInSwiftUI.swift; sourceTree = "<group>"; };
 		F5DF72262BAD6BA7002A3277 /* DemoApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DemoApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F5DF72292BAD6BA7002A3277 /* DemoAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DemoAppApp.swift; sourceTree = "<group>"; };
@@ -135,6 +139,8 @@
 			isa = PBXGroup;
 			children = (
 				F5A82F372BDF68E00009DD9A /* Platform.swift */,
+				F5D02D7F2BE0C10800CCBE0C /* ScreenOne.swift */,
+				F58780E92BE23E25005CFFCA /* ScreenThree.swift */,
 			);
 			path = NavigationStack;
 			sourceTree = "<group>";
@@ -351,11 +357,13 @@
 				F59252912BDD0A4100C4A664 /* AccountView.swift in Sources */,
 				F5CA0F3E2BDA8FA8000A3A47 /* CustomToggle.swift in Sources */,
 				F592529E2BDD2C5000C4A664 /* ProfileClass.swift in Sources */,
+				F5D02D802BE0C10800CCBE0C /* ScreenOne.swift in Sources */,
 				F59252972BDD0B4800C4A664 /* Profile.swift in Sources */,
 				F5D924FD2BD166BD00205BE3 /* TextInSwiftUI.swift in Sources */,
 				F5CA0F402BDA9B57000A3A47 /* 00_ParentView.swift in Sources */,
 				F5DF722C2BAD6BA7002A3277 /* ContentView.swift in Sources */,
 				F5CA0F422BDAA20B000A3A47 /* 01_ChildView.swift in Sources */,
+				F58780EA2BE23E25005CFFCA /* ScreenThree.swift in Sources */,
 				F5FF47602BD2A26F009A9FB1 /* ShapeinSwiftUI.swift in Sources */,
 				F57708582BDA21D300BC8892 /* CounterButton.swift in Sources */,
 				F59252932BDD0B1F00C4A664 /* BalanceView.swift in Sources */,
