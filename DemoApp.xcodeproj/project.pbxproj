@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		F50BCDB22BDEB90D0020C9E7 /* Navigation1.swift in Sources */ = {isa = PBXBuildFile; fileRef = F50BCDB12BDEB90D0020C9E7 /* Navigation1.swift */; };
+		F52147C82BE4925400FD29B6 /* ScreenOnes.swift in Sources */ = {isa = PBXBuildFile; fileRef = F52147C72BE4925400FD29B6 /* ScreenOnes.swift */; };
+		F52147CA2BE492B900FD29B6 /* StateManagement.swift in Sources */ = {isa = PBXBuildFile; fileRef = F52147C92BE492B900FD29B6 /* StateManagement.swift */; };
+		F52147CC2BE4942C00FD29B6 /* ScreenTwos.swift in Sources */ = {isa = PBXBuildFile; fileRef = F52147CB2BE4942C00FD29B6 /* ScreenTwos.swift */; };
 		F57708582BDA21D300BC8892 /* CounterButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = F57708572BDA21D300BC8892 /* CounterButton.swift */; };
 		F58780EA2BE23E25005CFFCA /* ScreenThree.swift in Sources */ = {isa = PBXBuildFile; fileRef = F58780E92BE23E25005CFFCA /* ScreenThree.swift */; };
 		F59252912BDD0A4100C4A664 /* AccountView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F59252902BDD0A4100C4A664 /* AccountView.swift */; };
@@ -53,6 +56,9 @@
 
 /* Begin PBXFileReference section */
 		F50BCDB12BDEB90D0020C9E7 /* Navigation1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Navigation1.swift; sourceTree = "<group>"; };
+		F52147C72BE4925400FD29B6 /* ScreenOnes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScreenOnes.swift; sourceTree = "<group>"; };
+		F52147C92BE492B900FD29B6 /* StateManagement.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StateManagement.swift; sourceTree = "<group>"; };
+		F52147CB2BE4942C00FD29B6 /* ScreenTwos.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScreenTwos.swift; sourceTree = "<group>"; };
 		F57708572BDA21D300BC8892 /* CounterButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CounterButton.swift; sourceTree = "<group>"; };
 		F58780E92BE23E25005CFFCA /* ScreenThree.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScreenThree.swift; sourceTree = "<group>"; };
 		F59252902BDD0A4100C4A664 /* AccountView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountView.swift; sourceTree = "<group>"; };
@@ -113,6 +119,16 @@
 				F50BCDB12BDEB90D0020C9E7 /* Navigation1.swift */,
 			);
 			path = Navigation;
+			sourceTree = "<group>";
+		};
+		F52147C62BE4924500FD29B6 /* StateManagement */ = {
+			isa = PBXGroup;
+			children = (
+				F52147C72BE4925400FD29B6 /* ScreenOnes.swift */,
+				F52147C92BE492B900FD29B6 /* StateManagement.swift */,
+				F52147CB2BE4942C00FD29B6 /* ScreenTwos.swift */,
+			);
+			path = StateManagement;
 			sourceTree = "<group>";
 		};
 		F592528F2BDD0A2300C4A664 /* ObservableState */ = {
@@ -207,6 +223,7 @@
 		F5F340132BD97AB10028F0DD /* State */ = {
 			isa = PBXGroup;
 			children = (
+				F52147C62BE4924500FD29B6 /* StateManagement */,
 				F5A82F342BDF666E0009DD9A /* NavigationStack */,
 				F50BCDB02BDEB8F70020C9E7 /* Navigation */,
 				F59252982BDD178E00C4A664 /* EnvironmentState */,
@@ -351,12 +368,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F52147CA2BE492B900FD29B6 /* StateManagement.swift in Sources */,
 				F5A82F382BDF68E00009DD9A /* Platform.swift in Sources */,
 				F5F340172BD97ADD0028F0DD /* Counter.swift in Sources */,
 				F592529C2BDD195E00C4A664 /* Balance.swift in Sources */,
+				F52147C82BE4925400FD29B6 /* ScreenOnes.swift in Sources */,
 				F59252912BDD0A4100C4A664 /* AccountView.swift in Sources */,
 				F5CA0F3E2BDA8FA8000A3A47 /* CustomToggle.swift in Sources */,
 				F592529E2BDD2C5000C4A664 /* ProfileClass.swift in Sources */,
+				F52147CC2BE4942C00FD29B6 /* ScreenTwos.swift in Sources */,
 				F5D02D802BE0C10800CCBE0C /* ScreenOne.swift in Sources */,
 				F59252972BDD0B4800C4A664 /* Profile.swift in Sources */,
 				F5D924FD2BD166BD00205BE3 /* TextInSwiftUI.swift in Sources */,

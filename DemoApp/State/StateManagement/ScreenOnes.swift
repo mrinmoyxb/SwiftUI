@@ -14,17 +14,30 @@ struct ScreenOnes: View {
     var body: some View {
         NavigationStack{
             VStack{
-                Text("Welcome to State Management").bold().font(.title)
+                // heading
+                Text("Welcome to State Management").bold().font(.title).multilineTextAlignment(.center)
+                
+                // text field
+                TextField("Enter name", text: $stateManagement.name)
+                    .padding(.horizontal, 50)
+                    .padding()
+                
+                // text field
+                TextField("Enter age", text: $stateManagement.name)
+                    .padding(.horizontal, 50)
+                    .padding()
+                
+                // navigation link
+                NavigationLink(destination: ScreenTwos(), label: {
+                    Text("Move to next screen")
+                        .frame(width: 200, height: 55)
+                        .background(.blue)
+                        .bold()
+                        .foregroundColor(.white)
+                        .cornerRadius(10)
+                        
+                })
             }.frame(maxWidth: .infinity, maxHeight: .infinity)
-            
-            NavigationLink(destination: ScreenTwos(), label: {
-                Text("Move to next screen")
-                    .frame(width: 200, height: 55)
-                    .background(.blue)
-                    .bold()
-                    .foregroundColor(.white)
-                    
-            })
             
         }.environmentObject(stateManagement)
             .navigationTitle("Home Screen")
