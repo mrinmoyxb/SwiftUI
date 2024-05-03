@@ -23,7 +23,7 @@ struct ScreenOnes: View {
                     .padding()
                 
                 // text field
-                TextField("Enter age", text: $stateManagement.name)
+                TextField("Enter age", text: $stateManagement.age)
                     .padding(.horizontal, 50)
                     .padding()
                 

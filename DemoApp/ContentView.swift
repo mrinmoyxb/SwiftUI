@@ -14,8 +14,9 @@ struct ContentView: View {
     var body: some View {
         //ToggleButton()
         //CustomToggle()
-        Account()
+        //Account()
             //.environmentObject(profile)
+        ScreenOnes()
     }
 }
 #Preview {

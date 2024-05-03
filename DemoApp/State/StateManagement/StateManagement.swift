@@ -10,5 +10,5 @@ import Foundation
 class StateManagement: ObservableObject{
     
     @Published var name: String = ""
-    @Published var age: Int = 0
+    @Published var age: String = ""
 }
