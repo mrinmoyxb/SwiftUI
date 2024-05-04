@@ -56,6 +56,7 @@
 
 /* Begin PBXFileReference section */
 		F50BCDB12BDEB90D0020C9E7 /* Navigation1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Navigation1.swift; sourceTree = "<group>"; };
+		F511D3A12BE65ADD002369D2 /* MyPlayground-Struct.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = "MyPlayground-Struct.playground"; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		F52147C72BE4925400FD29B6 /* ScreenOnes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScreenOnes.swift; sourceTree = "<group>"; };
 		F52147C92BE492B900FD29B6 /* StateManagement.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StateManagement.swift; sourceTree = "<group>"; };
 		F52147CB2BE4942C00FD29B6 /* ScreenTwos.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScreenTwos.swift; sourceTree = "<group>"; };
@@ -119,6 +120,14 @@
 				F50BCDB12BDEB90D0020C9E7 /* Navigation1.swift */,
 			);
 			path = Navigation;
+			sourceTree = "<group>";
+		};
+		F511D39C2BE65811002369D2 /* Struct */ = {
+			isa = PBXGroup;
+			children = (
+				F511D3A12BE65ADD002369D2 /* MyPlayground-Struct.playground */,
+			);
+			path = Struct;
 			sourceTree = "<group>";
 		};
 		F52147C62BE4924500FD29B6 /* StateManagement */ = {
@@ -223,6 +232,7 @@
 		F5F340132BD97AB10028F0DD /* State */ = {
 			isa = PBXGroup;
 			children = (
+				F511D39C2BE65811002369D2 /* Struct */,
 				F52147C62BE4924500FD29B6 /* StateManagement */,
 				F5A82F342BDF666E0009DD9A /* NavigationStack */,
 				F50BCDB02BDEB8F70020C9E7 /* Navigation */,
