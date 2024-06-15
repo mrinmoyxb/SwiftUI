@@ -25,17 +25,40 @@ struct StateBinding: View {
             }
             
             HStack{
-                Button(action: {number += 1}){
-                    Text("Increment")
-                        .padding()
-                        .background(.black)
-                        .font(.system(size: 25))
-                        .foregroundColor(.white)
-                        .cornerRadius(20)
-                        
+                CustomButtonIncrement(number: $number)
+                CustomButtonDecrement(number: $number)
                 }
                 
-                Button(action: {number = number>0 ? number - 1 : 0}){
+            }
+        }
+            
+    }
+
+
+struct CustomButtonIncrement: View{
+    
+    @Binding var number: Int
+    
+    var body: some View{
+        VStack{
+            Button(action: {number += 1}){
+                Text("Increment")
+                    .padding()
+                    .background(.black)
+                    .font(.system(size: 25))
+                    .foregroundColor(.white)
+                    .cornerRadius(20)
+            }
+        }
+    }
+}
+    
+    struct CustomButtonDecrement: View{
+        @Binding var number: Int
+        
+        var body: some View{
+            VStack{
+                Button(action: {number = number > 0 ? number - 1 : 0}){
                     Text("Decrement")
                         .padding()
                         .background(.black)
@@ -45,8 +68,6 @@ struct StateBinding: View {
                 }
             }
         }
-            
-    }
 }
 
 #Preview {
