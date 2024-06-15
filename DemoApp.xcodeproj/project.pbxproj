@@ -11,6 +11,7 @@
 		F52147C82BE4925400FD29B6 /* ScreenOnes.swift in Sources */ = {isa = PBXBuildFile; fileRef = F52147C72BE4925400FD29B6 /* ScreenOnes.swift */; };
 		F52147CA2BE492B900FD29B6 /* StateManagement.swift in Sources */ = {isa = PBXBuildFile; fileRef = F52147C92BE492B900FD29B6 /* StateManagement.swift */; };
 		F52147CC2BE4942C00FD29B6 /* ScreenTwos.swift in Sources */ = {isa = PBXBuildFile; fileRef = F52147CB2BE4942C00FD29B6 /* ScreenTwos.swift */; };
+		F57444D92C1D3342001F79A5 /* StateBinding.swift in Sources */ = {isa = PBXBuildFile; fileRef = F57444D82C1D3342001F79A5 /* StateBinding.swift */; };
 		F57708582BDA21D300BC8892 /* CounterButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = F57708572BDA21D300BC8892 /* CounterButton.swift */; };
 		F58780EA2BE23E25005CFFCA /* ScreenThree.swift in Sources */ = {isa = PBXBuildFile; fileRef = F58780E92BE23E25005CFFCA /* ScreenThree.swift */; };
 		F59252912BDD0A4100C4A664 /* AccountView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F59252902BDD0A4100C4A664 /* AccountView.swift */; };
@@ -20,6 +21,7 @@
 		F592529C2BDD195E00C4A664 /* Balance.swift in Sources */ = {isa = PBXBuildFile; fileRef = F592529B2BDD195E00C4A664 /* Balance.swift */; };
 		F592529E2BDD2C5000C4A664 /* ProfileClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = F592529D2BDD2C5000C4A664 /* ProfileClass.swift */; };
 		F59FB9432BDB652C009D5666 /* 02_SwiftToggle.swift in Sources */ = {isa = PBXBuildFile; fileRef = F59FB9422BDB652C009D5666 /* 02_SwiftToggle.swift */; };
+		F5A4DC9E2BE6AE0E00378CBE /* shapes.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5A4DC9D2BE6AE0E00378CBE /* shapes.swift */; };
 		F5A82F382BDF68E00009DD9A /* Platform.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5A82F372BDF68E00009DD9A /* Platform.swift */; };
 		F5CA0F3E2BDA8FA8000A3A47 /* CustomToggle.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5CA0F3D2BDA8FA8000A3A47 /* CustomToggle.swift */; };
 		F5CA0F402BDA9B57000A3A47 /* 00_ParentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5CA0F3F2BDA9B57000A3A47 /* 00_ParentView.swift */; };
@@ -60,6 +62,7 @@
 		F52147C72BE4925400FD29B6 /* ScreenOnes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScreenOnes.swift; sourceTree = "<group>"; };
 		F52147C92BE492B900FD29B6 /* StateManagement.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StateManagement.swift; sourceTree = "<group>"; };
 		F52147CB2BE4942C00FD29B6 /* ScreenTwos.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScreenTwos.swift; sourceTree = "<group>"; };
+		F57444D82C1D3342001F79A5 /* StateBinding.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StateBinding.swift; sourceTree = "<group>"; };
 		F57708572BDA21D300BC8892 /* CounterButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CounterButton.swift; sourceTree = "<group>"; };
 		F58780E92BE23E25005CFFCA /* ScreenThree.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScreenThree.swift; sourceTree = "<group>"; };
 		F59252902BDD0A4100C4A664 /* AccountView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountView.swift; sourceTree = "<group>"; };
@@ -69,6 +72,7 @@
 		F592529B2BDD195E00C4A664 /* Balance.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Balance.swift; sourceTree = "<group>"; };
 		F592529D2BDD2C5000C4A664 /* ProfileClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileClass.swift; sourceTree = "<group>"; };
 		F59FB9422BDB652C009D5666 /* 02_SwiftToggle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 02_SwiftToggle.swift; sourceTree = "<group>"; };
+		F5A4DC9D2BE6AE0E00378CBE /* shapes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = shapes.swift; sourceTree = "<group>"; };
 		F5A82F372BDF68E00009DD9A /* Platform.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Platform.swift; sourceTree = "<group>"; };
 		F5CA0F3D2BDA8FA8000A3A47 /* CustomToggle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomToggle.swift; sourceTree = "<group>"; };
 		F5CA0F3F2BDA9B57000A3A47 /* 00_ParentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 00_ParentView.swift; sourceTree = "<group>"; };
@@ -140,6 +144,14 @@
 			path = StateManagement;
 			sourceTree = "<group>";
 		};
+		F534D0F12C1D32F9009F46A9 /* Revision */ = {
+			isa = PBXGroup;
+			children = (
+				F57444D82C1D3342001F79A5 /* StateBinding.swift */,
+			);
+			path = Revision;
+			sourceTree = "<group>";
+		};
 		F592528F2BDD0A2300C4A664 /* ObservableState */ = {
 			isa = PBXGroup;
 			children = (
@@ -158,6 +170,14 @@
 				F592529D2BDD2C5000C4A664 /* ProfileClass.swift */,
 			);
 			path = EnvironmentState;
+			sourceTree = "<group>";
+		};
+		F5A4DC9C2BE6ADF100378CBE /* Shapes */ = {
+			isa = PBXGroup;
+			children = (
+				F5A4DC9D2BE6AE0E00378CBE /* shapes.swift */,
+			);
+			path = Shapes;
 			sourceTree = "<group>";
 		};
 		F5A82F342BDF666E0009DD9A /* NavigationStack */ = {
@@ -232,6 +252,8 @@
 		F5F340132BD97AB10028F0DD /* State */ = {
 			isa = PBXGroup;
 			children = (
+				F534D0F12C1D32F9009F46A9 /* Revision */,
+				F5A4DC9C2BE6ADF100378CBE /* Shapes */,
 				F511D39C2BE65811002369D2 /* Struct */,
 				F52147C62BE4924500FD29B6 /* StateManagement */,
 				F5A82F342BDF666E0009DD9A /* NavigationStack */,
@@ -381,6 +403,7 @@
 				F52147CA2BE492B900FD29B6 /* StateManagement.swift in Sources */,
 				F5A82F382BDF68E00009DD9A /* Platform.swift in Sources */,
 				F5F340172BD97ADD0028F0DD /* Counter.swift in Sources */,
+				F5A4DC9E2BE6AE0E00378CBE /* shapes.swift in Sources */,
 				F592529C2BDD195E00C4A664 /* Balance.swift in Sources */,
 				F52147C82BE4925400FD29B6 /* ScreenOnes.swift in Sources */,
 				F59252912BDD0A4100C4A664 /* AccountView.swift in Sources */,
@@ -399,6 +422,7 @@
 				F59252932BDD0B1F00C4A664 /* BalanceView.swift in Sources */,
 				F5DF722A2BAD6BA7002A3277 /* DemoAppApp.swift in Sources */,
 				F59FB9432BDB652C009D5666 /* 02_SwiftToggle.swift in Sources */,
+				F57444D92C1D3342001F79A5 /* StateBinding.swift in Sources */,
 				F592529A2BDD17EF00C4A664 /* Account.swift in Sources */,
 				F50BCDB22BDEB90D0020C9E7 /* Navigation1.swift in Sources */,
 			);

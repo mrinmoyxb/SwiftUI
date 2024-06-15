@@ -9,7 +9,23 @@ import SwiftUI
 
 struct shapes: View {
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        VStack{
+            Spacer()
+            Circle().frame(width: 100, height: 100)
+                .foregroundColor(.green)
+            Spacer()
+            Rectangle().frame(width: 300, height: 300).cornerRadius(20).foregroundColor(.blue)
+            Spacer()
+            
+            // gradient
+            Rectangle()
+                .fill(LinearGradient(
+                    gradient: Gradient(colors: [Color.red, Color.blue]),
+                    startPoint: .topLeading,
+                    endPoint: .bottomTrailing))
+                .frame(width: 300, height: 300)
+                .cornerRadius(20)
+        }.padding(10)
     }
 }
 
