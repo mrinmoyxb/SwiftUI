@@ -23,6 +23,9 @@
 		F59FB9432BDB652C009D5666 /* 02_SwiftToggle.swift in Sources */ = {isa = PBXBuildFile; fileRef = F59FB9422BDB652C009D5666 /* 02_SwiftToggle.swift */; };
 		F5A4DC9E2BE6AE0E00378CBE /* shapes.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5A4DC9D2BE6AE0E00378CBE /* shapes.swift */; };
 		F5A82F382BDF68E00009DD9A /* Platform.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5A82F372BDF68E00009DD9A /* Platform.swift */; };
+		F5C52F2B2C3473510098DD81 /* Datamanagement1.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5C52F2A2C3473510098DD81 /* Datamanagement1.swift */; };
+		F5C8FE8C2C3588820075C6D2 /* ExceptionHandling.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5C8FE8B2C3588820075C6D2 /* ExceptionHandling.swift */; };
+		F5C8FE8E2C35C2690075C6D2 /* asyncawait.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5C8FE8D2C35C2690075C6D2 /* asyncawait.swift */; };
 		F5CA0F3E2BDA8FA8000A3A47 /* CustomToggle.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5CA0F3D2BDA8FA8000A3A47 /* CustomToggle.swift */; };
 		F5CA0F402BDA9B57000A3A47 /* 00_ParentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5CA0F3F2BDA9B57000A3A47 /* 00_ParentView.swift */; };
 		F5CA0F422BDAA20B000A3A47 /* 01_ChildView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5CA0F412BDAA20B000A3A47 /* 01_ChildView.swift */; };
@@ -74,6 +77,9 @@
 		F59FB9422BDB652C009D5666 /* 02_SwiftToggle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 02_SwiftToggle.swift; sourceTree = "<group>"; };
 		F5A4DC9D2BE6AE0E00378CBE /* shapes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = shapes.swift; sourceTree = "<group>"; };
 		F5A82F372BDF68E00009DD9A /* Platform.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Platform.swift; sourceTree = "<group>"; };
+		F5C52F2A2C3473510098DD81 /* Datamanagement1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Datamanagement1.swift; sourceTree = "<group>"; };
+		F5C8FE8B2C3588820075C6D2 /* ExceptionHandling.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExceptionHandling.swift; sourceTree = "<group>"; };
+		F5C8FE8D2C35C2690075C6D2 /* asyncawait.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = asyncawait.swift; sourceTree = "<group>"; };
 		F5CA0F3D2BDA8FA8000A3A47 /* CustomToggle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomToggle.swift; sourceTree = "<group>"; };
 		F5CA0F3F2BDA9B57000A3A47 /* 00_ParentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 00_ParentView.swift; sourceTree = "<group>"; };
 		F5CA0F412BDAA20B000A3A47 /* 01_ChildView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 01_ChildView.swift; sourceTree = "<group>"; };
@@ -190,6 +196,29 @@
 			path = NavigationStack;
 			sourceTree = "<group>";
 		};
+		F5C52F272C34731B0098DD81 /* Temp */ = {
+			isa = PBXGroup;
+			children = (
+				F5F340162BD97ADD0028F0DD /* Counter.swift */,
+				F57708572BDA21D300BC8892 /* CounterButton.swift */,
+				F5CA0F3D2BDA8FA8000A3A47 /* CustomToggle.swift */,
+				F5CA0F3F2BDA9B57000A3A47 /* 00_ParentView.swift */,
+				F5CA0F412BDAA20B000A3A47 /* 01_ChildView.swift */,
+				F59FB9422BDB652C009D5666 /* 02_SwiftToggle.swift */,
+			);
+			path = Temp;
+			sourceTree = "<group>";
+		};
+		F5C52F282C34732D0098DD81 /* Data management */ = {
+			isa = PBXGroup;
+			children = (
+				F5C52F2A2C3473510098DD81 /* Datamanagement1.swift */,
+				F5C8FE8B2C3588820075C6D2 /* ExceptionHandling.swift */,
+				F5C8FE8D2C35C2690075C6D2 /* asyncawait.swift */,
+			);
+			path = "Data management";
+			sourceTree = "<group>";
+		};
 		F5DF721D2BAD6BA7002A3277 = {
 			isa = PBXGroup;
 			children = (
@@ -252,6 +281,8 @@
 		F5F340132BD97AB10028F0DD /* State */ = {
 			isa = PBXGroup;
 			children = (
+				F5C52F282C34732D0098DD81 /* Data management */,
+				F5C52F272C34731B0098DD81 /* Temp */,
 				F534D0F12C1D32F9009F46A9 /* Revision */,
 				F5A4DC9C2BE6ADF100378CBE /* Shapes */,
 				F511D39C2BE65811002369D2 /* Struct */,
@@ -260,12 +291,6 @@
 				F50BCDB02BDEB8F70020C9E7 /* Navigation */,
 				F59252982BDD178E00C4A664 /* EnvironmentState */,
 				F592528F2BDD0A2300C4A664 /* ObservableState */,
-				F5F340162BD97ADD0028F0DD /* Counter.swift */,
-				F57708572BDA21D300BC8892 /* CounterButton.swift */,
-				F5CA0F3D2BDA8FA8000A3A47 /* CustomToggle.swift */,
-				F5CA0F3F2BDA9B57000A3A47 /* 00_ParentView.swift */,
-				F5CA0F412BDAA20B000A3A47 /* 01_ChildView.swift */,
-				F59FB9422BDB652C009D5666 /* 02_SwiftToggle.swift */,
 			);
 			path = State;
 			sourceTree = "<group>";
@@ -415,13 +440,16 @@
 				F5D924FD2BD166BD00205BE3 /* TextInSwiftUI.swift in Sources */,
 				F5CA0F402BDA9B57000A3A47 /* 00_ParentView.swift in Sources */,
 				F5DF722C2BAD6BA7002A3277 /* ContentView.swift in Sources */,
+				F5C8FE8E2C35C2690075C6D2 /* asyncawait.swift in Sources */,
 				F5CA0F422BDAA20B000A3A47 /* 01_ChildView.swift in Sources */,
 				F58780EA2BE23E25005CFFCA /* ScreenThree.swift in Sources */,
 				F5FF47602BD2A26F009A9FB1 /* ShapeinSwiftUI.swift in Sources */,
 				F57708582BDA21D300BC8892 /* CounterButton.swift in Sources */,
 				F59252932BDD0B1F00C4A664 /* BalanceView.swift in Sources */,
+				F5C52F2B2C3473510098DD81 /* Datamanagement1.swift in Sources */,
 				F5DF722A2BAD6BA7002A3277 /* DemoAppApp.swift in Sources */,
 				F59FB9432BDB652C009D5666 /* 02_SwiftToggle.swift in Sources */,
+				F5C8FE8C2C3588820075C6D2 /* ExceptionHandling.swift in Sources */,
 				F57444D92C1D3342001F79A5 /* StateBinding.swift in Sources */,
 				F592529A2BDD17EF00C4A664 /* Account.swift in Sources */,
 				F50BCDB22BDEB90D0020C9E7 /* Navigation1.swift in Sources */,
