@@ -79,12 +79,68 @@ struct asyncawait: View {
                 .padding(.horizontal)
             
             // profile pic
-            
+//            AsyncImage(url: URL(string: viewModel.user.avatar_url ?? "")) { image in
+//                Image(image)
+//                    .resizable()
+//                    .scaledToFit()
+//                    .frame(width: 150, height: 150)
+//            } placeholder: {
+                Circle()
+                    .frame(width: 150, height: 150)
+                    .foregroundColor(/*@START_MENU_TOKEN@*/.blue/*@END_MENU_TOKEN@*/)
+            //}
+
             
             // bio
-            Text("Name: \(viewModel.user.name)")
+            Text("\(viewModel.user.name)")
+                .font(.title2)
+                .fontWeight(.semibold)
                 .lineLimit(1)
                 .multilineTextAlignment(.center)
+            
+            Text("\(viewModel.user.bio)")
+                .font(.headline)
+                .fontWeight(.medium)
+                .foregroundColor(Color(.systemGray))
+                .lineLimit(1)
+                .multilineTextAlignment(.center)
+            
+            HStack(spacing: 10){
+                ZStack{
+                    Rectangle()
+                        .frame(width: (UIScreen.main.bounds.width/2) - 40, height: 50)
+                        .cornerRadius(10)
+                        .foregroundColor(Color(.green))
+                    
+                    VStack(spacing: 1){
+                        Text("\(viewModel.user.followers)")
+                            .font(.subheadline)
+                            .fontWeight(.bold)
+                            .foregroundColor(.black)
+                        
+                        Text("Followers")
+                            .font(.footnote)
+                    }
+                }
+                
+                ZStack{
+                    Rectangle()
+                        .frame(width: (UIScreen.main.bounds.width/2) - 40, height: 50)
+                        .cornerRadius(10)
+                        .foregroundColor(Color(.green))
+                    
+                    VStack(spacing: 1){
+                        Text("\(viewModel.user.following)")
+                            .font(.subheadline)
+                            .fontWeight(.bold)
+                            .foregroundColor(.black)
+                        
+                        Text("Following")
+                            .font(.footnote)
+                    }
+                }
+            }
+            
         }
     }
 }

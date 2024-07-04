@@ -8,8 +8,25 @@
 import SwiftUI
 
 struct RootView: View {
+    
+    @State private var isSignedIn: Bool = false
+    
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        ZStack{
+            NavigationStack{
+                Text("Setting")
+            }
+        }
+        .onAppear{
+            let authUser = try? AuthenticationManager.AuthManagerInstance.getAuthUser()
+            self.isSignedIn = authUser==nil ? true : false
+        }
+        
+        .fullScreenCover(isPresented: $isSignedIn, content: {
+            NavigationStack{
+                SignUpView()
+            }
+        })
     }
 }
 
